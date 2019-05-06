@@ -1,0 +1,12 @@
+node_modules/
+config/
+force-app/
+manifest/
+.prettierrc/
+.sfdx/
+.vscode/
+config/
+force-app/
+manifest/
+sfdx-project.json
+
