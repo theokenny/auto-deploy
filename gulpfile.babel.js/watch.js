@@ -18,11 +18,12 @@ export default function watch() {
                 console.log('error occur: ' +err);
                 return;
             }
-            //below is required 
-            console.log(`stdout: ${stdout}`);
-            console.log(`stderr: ${stderr}`);
-        });
-       
+            else {
+                 //below is required 
+                 console.log(`stdout: ${stdout}`);
+                 console.log('Uploaded successful');
+            }            
+        });       
     });    
 }
 
