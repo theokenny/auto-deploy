@@ -15,7 +15,9 @@ export default function watch() {
         const res = exec(`sfdx force:source:deploy --sourcepath ${filePath} --json --loglevel fatal`, (err, stdout, stderr) => {
             //if error occur
             if(err) {
-                console.log('error occur: ' +err);
+            	 var errLog = stderr.split('"stack');
+                console.log(`error log: ${errLog[0]}`); 
+                //console.log('error occur: ' +stderr);             
                 return;
             }
             else {
