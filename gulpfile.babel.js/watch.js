@@ -4,7 +4,7 @@ import gulp from 'gulp';
 export default function watch() {
     //define project path to watch
     let projPath = 'force-app/main/default';
-    
+
     gulp.watch(projPath).on('change', function(file) {
         
         console.log('starting to deploy file: ' +file);
@@ -20,7 +20,7 @@ export default function watch() {
             else {
                  //below is required 
                  console.log(`stdout: ${stdout}`);
-                 console.log('Uploaded successful');
+                 console.log('\x1b[36m%s\x1b[0m','Uploaded successful');
             }            
         });       
     });    
