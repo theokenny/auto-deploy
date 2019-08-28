@@ -12,7 +12,9 @@
     "@babel/preset-env": "^7.5.4",
     "@babel/register": "^7.4.4",
     "gulp": "^4.0.2",
-    "gulp-plumber": "^1.2.1"
+    "gulp-cached": "^1.1.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-remember": "^1.0.1"
   },
   "dependencies": {}
 }
