@@ -1,3 +1,11 @@
+/* 
+    ------------------------------------------------------------------------------
+    retrieve.js
+    author: Kenny Soetjipto
+    ------------------------------------------------------------------------------    
+    purpose: A function which retrieves all sources from Salesforce
+*/
+
 import {exec} from 'child_process';
 import fs from 'fs';
 

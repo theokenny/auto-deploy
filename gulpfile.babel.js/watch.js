@@ -1,3 +1,10 @@
+/* 
+    ------------------------------------------------------------------------------
+    watch.js
+    author: Kenny Soetjipto
+    ------------------------------------------------------------------------------    
+    purpose: A function which watch any changes within Project folder (force-app)
+*/
 import {exec} from 'child_process';
 import gulp from 'gulp';
 
@@ -5,6 +12,7 @@ export default function watch() {
     //define project path to watch
     let projPath = 'force-app/main/default';
 
+    //if there is a change, then execute this function
     gulp.watch(projPath).on('change', function(file) {
         
         console.log('starting to deploy file: ' +file);
