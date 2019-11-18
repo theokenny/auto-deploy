@@ -15,7 +15,7 @@ export default function watch() {
     //if there is a change, then execute this function
     gulp.watch(projPath).on('change', function(file) {
         
-        console.log('starting to deploy file: ' +file);
+        console.log( '\x1b[35m%s\x1b[0m','starting to deploy file: ' +file);
         //utilise exec() from child_process
         const res = exec(`sfdx force:source:deploy --sourcepath ${file} --json --loglevel fatal`, (err, stdout, stderr) => {
             //if error occur
